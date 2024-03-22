@@ -1,0 +1,20 @@
+Package: CIELapp
+Title: Transforming visible spectra to CIELAB parameters
+Version: 0.0.0.9000
+Authors@R: 
+    person("Anibal", "Catania", , "anibalacatania@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description:  The app is  for transforming  visible spectra to CIELAB parameters in wines. 
+              The input should be a .csv file with wavelength in rows and products in columns. 
+              The name of the first column should be: longdeonda. 
+              The absorption spectra (380−770 nm) of all the wines  were recorded
+              at constant intervals (Δλ = 1 nm) using 1 mm path length glass cells and distilled water as areference. 
+              The CIELAB parameters (L*, a*, b*, C* ab , and h ab ) were determine following the recommendations of the Commission International de L’Eclariage: 26 the 10°Standard Observer and Standard Illuminant D65.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Depends: 
+    R (>= 2.10)
+LazyData: true
