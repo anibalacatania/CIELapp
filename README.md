@@ -17,3 +17,9 @@ if (!require("devtools")) install.packages("devtools")
 library(devtools)
 install_github("anibalacatania/CIELapp")
 ```
+
+For use it just run the following code
+
+``` r
+CIELapp()
+```
