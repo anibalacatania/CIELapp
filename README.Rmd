@@ -8,7 +8,7 @@ The input should be a .csv file with wavelength in rows and products in columns.
 You can install the development version of {CIELapp} from GitHub with:
 
 
-```{r}
+``` r
 if (!require("devtools")) install.packages("devtools")
 library(devtools)
 install_github("anibalacatania/CIELapp")
