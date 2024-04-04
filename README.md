@@ -1,2 +1,4 @@
 # CIELapp
-App for transforming  visible spectra to CIELAB parameters
+The input should be a .csv file with wavelength in rows and products in columns. The name of the first column should be: longdeonda. The absorption spectra (380−770 nm) of all the wines  were recorded at constant intervals (Δλ = 1 nm) using 1 mm path length glass cells and distilled water as areference.  The CIELAB parameters (L*, a*, b*, C* ab , and h ab ) were determine following the recommendations of the Commission International de L’Eclariage: 26 the 10°Standard Observer and Standard Illuminant D65.
+              
+
