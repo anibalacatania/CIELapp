@@ -21,5 +21,6 @@ install_github("anibalacatania/CIELapp")
 For use it just run the following code
 
 ``` r
+library(CIELapp)
 CIELapp()
 ```
