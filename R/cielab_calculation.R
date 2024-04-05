@@ -26,7 +26,7 @@ custom_analysis_function_cielab <- function(data_frame) {
 
   W <- mutate(W, h = ((atan2(b, a) * 180) / (pi)))
   W <- mutate(W, C = sqrt(a^2 + b^2))
-  W <- select(W, h, L, a, b, C)
+  W <- select(W,tratamiento, h, L, a, b, C)
 
   return(W)
 }

@@ -5,7 +5,6 @@ library(colorscience)
 library(magrittr)
 library(forcats)
 CIELapp <- function(...) {
-# Definir la función custom_analysis_function_cielab
 
 # Define UI
 ui <- fluidPage(
