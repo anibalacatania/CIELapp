@@ -1,9 +1,4 @@
-library(shiny)
-library(dplyr)
-library(purrr)
-library(colorscience)
-library(magrittr)
-library(forcats)
+
 CIELapp <- function(...) {
 
 # Define UI

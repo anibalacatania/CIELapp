@@ -30,3 +30,5 @@ custom_analysis_function_cielab <- function(data_frame) {
 
   return(W)
 }
+
+custom_analysis_function_cielab(abs)
