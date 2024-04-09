@@ -3,7 +3,7 @@ custom_analysis_function_cielab <- function(data_frame) {
     abstotrans <- function(x) {
       10^(-x)
     }
-    trans <- select(data_frame, -longdeonda)
+    trans <- dplyr::select(data_frame, -longdeonda)
     trans2 <- map_df(trans, abstotrans)
     L <- data_frame$longdeonda
     df2 <- cbind(L, trans2)
@@ -14,7 +14,7 @@ custom_analysis_function_cielab <- function(data_frame) {
                                                      RefWhite = get("XYZperfectreflectingdiffuser", envir = environment()))), x, 4))
   }
 
-  calculate_cielab <- map(names(select(data_frame, -longdeonda)), cielab_calculation)
+  calculate_cielab <- map(names(select(dplyr::data_frame, -longdeonda)), cielab_calculation)
   W <- do.call(rbind, calculate_cielab)
   W <- as.data.frame(W)
   colnames(W) <- c("L", "a", "b", "tratamiento")  # Cambiado el nombre de la cuarta columna
@@ -26,7 +26,7 @@ custom_analysis_function_cielab <- function(data_frame) {
 
   W <- mutate(W, h = ((atan2(b, a) * 180) / (pi)))
   W <- mutate(W, C = sqrt(a^2 + b^2))
-  W <- select(W,tratamiento, h, L, a, b, C)
+  W <- dplyr::select(W,tratamiento, h, L, a, b, C)
 
   return(W)
 }
